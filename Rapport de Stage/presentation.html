@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Présentation de l’entreprise - Rapport de Stage</title>
+  <title>Présentation de l'entreprise - Rapport de Stage</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -12,8 +12,17 @@
 
   <!-- NAVIGATION -->
   <nav class="bg-white shadow-md fixed w-full top-0 z-50">
-    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-      <span class="font-bold text-xl text-gray-800">Mon Stage</span>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+      <span class="font-bold text-lg sm:text-xl text-gray-800">Mon Stage</span>
+      
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md hover:bg-gray-100">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      
+      <!-- Desktop menu -->
       <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
         <li><a href="index.html" class="hover:text-black">Accueil</a></li>
         <li><a href="activites.html" class="hover:text-black">Mes activités</a></li>
@@ -21,79 +30,87 @@
         <li><a href="conclusion.html" class="hover:text-black">Conclusion</a></li>
         <li><a href="remerciements.html" class="hover:text-black">Remerciements</a></li>
       </ul>
+      
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t">
+        <ul class="py-2">
+          <li><a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Accueil</a></li>
+          <li><a href="activites.html" class="block px-4 py-2 hover:bg-gray-100">Mes activités</a></li>
+          <li><a href="etude-de-cas.html" class="block px-4 py-2 hover:bg-gray-100">Étude de cas</a></li>
+          <li><a href="conclusion.html" class="block px-4 py-2 hover:bg-gray-100">Conclusion</a></li>
+          <li><a href="remerciements.html" class="block px-4 py-2 hover:bg-gray-100">Remerciements</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <!-- CONTENU -->
-  <main class="max-w-5xl mx-auto pt-6 pb-32 pb-32 min-h-screen">
-    <h1 data-aos="fade-down" class="text-3xl md:text-4xl font-bold text-center mb-12">
-  <span class="inline-block px-6 py-2 rounded-md text-white orange-custom shadow-md">
-    Présentation de l’entreprise
-  </span>
-</h1>
-
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 pt-6 pb-32 min-h-screen">
+    <h1 data-aos="fade-down" class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">
+      <span class="inline-block px-4 sm:px-6 py-2 rounded-md text-white orange-custom shadow-md">
+        Présentation de l'entreprise
+      </span>
+    </h1>
 
     <!-- II.1. Situation géographique -->
-    <section class="mb-10" data-aos="fade-up">
-      <h2 class="text-2xl font-semibold mb-2">Situation géographique</h2>
-      <p class="text-gray-700 font-bold">
-        L’entreprise DotSafe est située à 125 quai des Chartrons 33300 BORDEAUX. Elle bénéficie d’un emplacement stratégique proche de la cité du vin, le quai des chartrons et le tram B (Arrêt Cours du Medoc).
+    <section class="mb-8 sm:mb-10" data-aos="fade-up">
+      <h2 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-center sm:text-left">Situation géographique</h2>
+      <p class="text-gray-700 font-bold text-sm sm:text-base leading-relaxed">
+        L'entreprise DotSafe est située à 125 quai des Chartrons 33300 BORDEAUX. Elle bénéficie d'un emplacement stratégique proche de la cité du vin, le quai des chartrons et le tram B (Arrêt Cours du Medoc).
       </p>
     </section>
 
     <!-- II.2. Historique -->
-    <section class="mb-10" data-aos="fade-up">
-      <h2 class="text-2xl font-semibold mb-2">Historique</h2>
-      <p class="text-gray-700 font-bold">
-        Fondée en mars 2009, DotSafe s’est rapidement spécialisée dans le secteur du developpement web et audit de sécurité(test d'intrusion, formations etc...) . Depuis sa création, l’entreprise a connu une croissance constante, en diversifiant ses services et en élargissant son portefeuille client.
+    <section class="mb-8 sm:mb-10" data-aos="fade-up">
+      <h2 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-center sm:text-left">Historique</h2>
+      <p class="text-gray-700 font-bold text-sm sm:text-base leading-relaxed">
+        Fondée en mars 2009, DotSafe s'est rapidement spécialisée dans le secteur du developpement web et audit de sécurité(test d'intrusion, formations etc...) . Depuis sa création, l'entreprise a connu une croissance constante, en diversifiant ses services et en élargissant son portefeuille client.
       </p>
     </section>
 
     <!-- II.3. Statut juridique -->
-    <section class="mb-10" data-aos="fade-up">
-      <h2 class="text-2xl font-semibold mb-2">Statut juridique</h2>
-      <p class="text-gray-700 font-bold">
+    <section class="mb-8 sm:mb-10" data-aos="fade-up">
+      <h2 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-center sm:text-left">Statut juridique</h2>
+      <p class="text-gray-700 font-bold text-sm sm:text-base leading-relaxed">
         DotSafe est une société SAS, et dont le siège social est situé à BORDEAUX.
       </p>
     </section>
 
     <!-- II.4. Organigramme -->
-<!-- II.4. Organigramme -->
-<section class="mb-10" data-aos="fade-up">
-  <h2 class="text-2xl font-semibold mb-2">Organigramme</h2>
-  <p class="text-gray-700 font-bold mb-4">
-    Voici l’organigramme simplifié de l’entreprise :
-  </p>
+    <section class="mb-8 sm:mb-10" data-aos="fade-up">
+      <h2 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-center sm:text-left">Organigramme</h2>
+      <p class="text-gray-700 font-bold mb-4 text-sm sm:text-base leading-relaxed">
+        Voici l'organigramme simplifié de l'entreprise :
+      </p>
 
-  <img src="assets/images/organigramme.png" 
-       alt="Organigramme de DotSafe"
-       class="w-1/2 rounded shadow-md mt-2 mb-4 ml-0" />
-
-  <!-- Ajoute un div pour forcer les sections suivantes à apparaître sous l'image -->
-  <div class="clear-both"></div>
-</section>
+      <div class="flex justify-center sm:justify-start">
+        <img src="assets/images/organigramme.png" 
+             alt="Organigramme de DotSafe"
+             class="w-full sm:w-3/4 md:w-1/2 max-w-md rounded shadow-md" />
+      </div>
+    </section>
 
     <!-- II.5. Activités et fournisseurs -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-2">Activités et fournisseurs</h2>
-      <p class="text-gray-700 font-bold">
-        DotSafe est une agence bordelaise experte en développement de solutions numériques sur mesure (applications web, mobiles, SaaS) et en conseil digital, notamment en UX/UI, DevOps, performance SI et cybersécurité (audit, pentesting). La société s’appuie sur une philosophie collaborative forte et un environnement technique évolutif
+    <section class="mb-8 sm:mb-10" data-aos="fade-up">
+      <h2 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-center sm:text-left">Activités et fournisseurs</h2>
+      <p class="text-gray-700 font-bold text-sm sm:text-base leading-relaxed">
+        DotSafe est une agence bordelaise experte en développement de solutions numériques sur mesure (applications web, mobiles, SaaS) et en conseil digital, notamment en UX/UI, DevOps, performance SI et cybersécurité (audit, pentesting). La société s'appuie sur une philosophie collaborative forte et un environnement technique évolutif
       </p>
     </section>
 
     <!-- II.6. Clients -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-2">Clients</h2>
-      <p class="text-gray-700 font-bold">
-        DotSafe intervient auprès de clients prestigieux comme FloaBank, le CNRS, ou encore YouSchool ainsi que des collectivités locales telles que la Mairie d’Annecy ou encore Bordeaux Métropole. Elle réalise pour eux des applications métier personnalisées, des audits de sécurité et des projets de transformation digitale. Cette diversité de clients publics et institutionnels démontre la capacité de DotSafe à répondre à des besoins techniques exigeants et à développer des solutions robustes, sécurisées et adaptées à des organisations variées .
+    <section class="mb-8 sm:mb-10" data-aos="fade-up">
+      <h2 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-center sm:text-left">Clients</h2>
+      <p class="text-gray-700 font-bold text-sm sm:text-base leading-relaxed">
+        DotSafe intervient auprès de clients prestigieux comme FloaBank, le CNRS, ou encore YouSchool ainsi que des collectivités locales telles que la Mairie d'Annecy ou encore Bordeaux Métropole. Elle réalise pour eux des applications métier personnalisées, des audits de sécurité et des projets de transformation digitale. Cette diversité de clients publics et institutionnels démontre la capacité de DotSafe à répondre à des besoins techniques exigeants et à développer des solutions robustes, sécurisées et adaptées à des organisations variées .
       </p>
     </section>
 
-<!-- BOUTON POUR CONTINUER OU REVENIR EN ARRIERE -->
-<div class="flex justify-between mt-12" >
-  <a href="index.html" class="button">← Vers Accueil</a>
-  <a href="activites.html" class="button">Vers Mes Activités →</a>
-</div>
+    <!-- BOUTONS POUR CONTINUER OU REVENIR EN ARRIERE -->
+    <div class="flex flex-col sm:flex-row justify-between gap-4 mt-8 sm:mt-12">
+      <a href="index.html" class="button text-center">← Vers Accueil</a>
+      <a href="activites.html" class="button text-center">Vers Mes Activités →</a>
+    </div>
 
   </main>
 
@@ -102,40 +119,58 @@
     &copy; 2025 Aron Pautrot. Tous droits réservés.
   </footer>
 
-  <!-- SCRIPTS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  window.addEventListener('load', () => {
-    AOS.init({
-      once: true,
-      duration: 600,
-      offset: 100,
-    });
-    AOS.refresh(); // Important si des images affectent la mise en page
-  });
-</script>
-<div class="fixed top-20 right-4 z-50" style="transform: scale(0.6); transform-origin: top right;">
-
-<div class="fixed top-4 right-4 z-50">
-  <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
-    <div class="wheel"></div>
-    <div class="hamster">
-      <div class="hamster__body">
-        <div class="hamster__head">
-          <div class="hamster__ear"></div>
-          <div class="hamster__eye"></div>
-          <div class="hamster__nose"></div>
+  <!-- Hamster animation - hidden on mobile for better performance -->
+  <div class="hidden lg:block fixed top-20 right-4 z-50" style="transform: scale(0.6); transform-origin: top right;">
+    <div class="fixed top-4 right-4 z-50">
+      <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
         </div>
-        <div class="hamster__limb hamster__limb--fr"></div>
-        <div class="hamster__limb hamster__limb--fl"></div>
-        <div class="hamster__limb hamster__limb--br"></div>
-        <div class="hamster__limb hamster__limb--bl"></div>
-        <div class="hamster__tail"></div>
+        <div class="spoke"></div>
       </div>
     </div>
-    <div class="spoke"></div>
   </div>
-</div>
-</div>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      
+      if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+
+    // AOS initialization
+    window.addEventListener('load', () => {
+      AOS.init({
+        once: true,
+        duration: 600,
+        offset: 50, // Reduced offset for mobile
+      });
+      AOS.refresh();
+    });
+  </script>
 </body>
 </html>
