@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapport de Stage -  Pautrot</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- NAVIGATION -->
+  <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="font-bold text-xl text-gray-800">Mon Stage
+
+        
+      </span>
+      <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <li><a href="presentation.html" class="hover:text-black">Présentation de l’entreprise</a></li>
+        <li><a href="activites.html" class="hover:text-black">Mes activités</a></li>
+        <li><a href="etude-de-cas.html" class="hover:text-black">Étude de cas</a></li>
+        <li><a href="conclusion.html" class="hover:text-black">Conclusion</a></li>
+        <li><a href="remerciments.html" class="hover:text-black">Remerciements</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Wrapper scrollable pour préserver AOS et gérer scroll -->
+  <div id="app-wrapper">
+    <!-- HEADER -->
+    <header id="accueil" class="bg-gray-800 text orange-custom py-20 text-center shadow-lg" data-aos="fade-down">
+      <img src="assets/images/dotsafe_new_white.svg" alt="Logo DotSafe"
+           class="mx-auto mb-6 w-32 h-auto bg-gray-800 p-2 rounded-xl shadow-md" />
+      <h1 class="text-5xl font-bold mb-4">Rapport de Stage</h1>
+      <p class="text-xl font-bold">Aron Pautrot - 9 Juin au 5 Juillet</p>
+      <p class="mt-2 font-bold">Entreprise : DotSafe</p>
+    </header>
+
+    <!-- MAIN -->
+    <main class="max-w-5xl mx-auto px-6 py-16">
+      <section data-aos="fade-up">
+        <h2 class="text-3xl font-semibold mb-6 border-b pb-2 text-center">Bienvenue 👋</h2>
+        <p class="text-gray-700 text-lg mb-8 text-center">
+          Je suis élève de première CIEL au Lycée de Blaye et je vous présente mon rapport de stage sous forme de site! Cliquez sur un bouton ci-dessous pour naviguer :
+        </p>
+
+
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+          <div class="space-y-4 w-full md:w-1/2">
+            <!-- Boutons -->
+            <div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+              <a href="presentation.html" class="button">Présentation</a> 
+              <p class="text-sm text-gray-600 font-bold">Découvrez l'entreprise DotSafe</p>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+              <a href="activites.html" class="button">Activités</a>
+              <p class="text-sm text-gray-600 font-bold">Mes missions pendant le stage</p>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+              <a href="etude-de-cas.html" class="button">Étude de cas</a>
+              <p class="text-sm text-gray-600 font-bold">Un projet analysé en profondeur</p>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+              <a href="conclusion.html" class="button">Conclusion</a>
+              <p class="text-sm text-gray-600 font-bold">Mon retour sur cette expérience.</p>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+              <a href="remerciements.html" class="button">Remerciements</a>
+              <p class="text-sm text-gray-600 font-bold">Merci à ceux qui m'ont accompagné.</p>
+            </div>
+          </div>
+
+          <!-- Loader à droite, un peu plus haut -->
+          <div class="w-full md:w-1/2 flex justify-center md:justify-end mt-20 md:mt-4 mb-12 md:mb-0">
+            <div class="loader"></div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-sm text-gray-500 border-t mt-16" data-aos="fade-up">
+    &copy; 2025 Aron Pautrot. Tous droits réservés.
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>

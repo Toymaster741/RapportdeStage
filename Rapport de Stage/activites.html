@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mes Activités - Rapport de Stage</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 text-gray-900 font-white">
+
+  <!-- NAVIGATION -->
+  <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="font-bold text-xl text-gray-800">Mon Stage</span>
+      <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <li><a href="index.html" class="hover:text-black">Accueil</a></li>
+        <li><a href="presentation.html" class="hover:text-black">Présentation de l’entreprise</a></li>
+        <li><a href="etude-de-cas.html" class="hover:text-black">Étude de cas</a></li>
+        <li><a href="conclusion.html" class="hover:text-black">Conclusion</a></li>
+        <li><a href="remerciements.html" class="hover:text-black">Remerciements</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONTENU -->
+  <main class="max-w-5xl mx-auto pt-6 pb-32 min-h-screen">
+    <h1 data-aos="fade-down" class="text-3xl md:text-4xl font-bold text-center mb-12">
+      <span class="inline-block px-6 py-2 rounded-md text-white orange-custom shadow-md">
+        Mes Activités en Entreprise
+      </span>
+    </h1>
+
+    <!-- Activité 1 -->
+    <section class="mb-10 text-center md:text-left" data-aos="fade-up">
+  <h2 class="text-2xl font-semibold mb-2">Réalisation de pages web</h2>
+  <p class="text-gray-700 font-bold">
+    J'ai ete formé en html et css pour commancer a dévélopper des sites web, j'ai suivie des formations et aprofondie mes connaisances sur sertaines facettes de ce balisage. Cela m'a permis de consolider mes compétences en responsive design et en architecture de code front-end ce qui m'aidera dans mon objectif de devenir DevOps.
+  </p>
+
+  <img src="assets/images/Realisation_Code.png" 
+       alt="Exemple de Code"
+       class="w-full sm:w-2/3 md:w-1/2 mx-auto rounded-xl shadow-md mt-2 mb-4" />
+</section>
+
+
+
+   
+    <!-- Activité 3 -->
+    <section class="mb-10 text-center md:text-left" >
+      <h2 class="text-2xl font-semibold mb-2">Analyse de sécurité</h2>
+      <p class="text-gray-700 font-bold">
+        Sous la supervision d'un expert, j'ai participé à des audits de sécurité et à des tests d'intrusion sur des applications internes. J'ai pu voir comment utiliser des outils comme Burp Suite et OWASP ZAP, j'ai beaucoup aimee cette partie de mon stage. J'en raccontrai plus dans mon étude de cas.
+      </p>
+    </section>
+
+    <!-- Activité 4 -->
+    <section class="mb-10 text-center md:text-left">
+      <h2 class="text-2xl font-semibold mb-2">Participation à des réunions Daily</h2>
+      <p class="text-gray-700 font-bold">
+        J'ai assisté à des réunions quotidiennes (daily meetings), Un résumé du travail a faire chaque jour. Cela m'a aidé à comprendre l'organisation d'une équipe de développement et de voir les objectifs que chaque equipe avait. J'ai pu observé aussi les tache que devait reguliairement faires les DevOps, ce qui commence a me former sur le sujet.
+      </p>
+    </section>
+
+    <div class="loadingspinner">
+  <div id="square1"></div>
+  <div id="square2"></div>
+  <div id="square3"></div>
+  <div id="square4"></div>
+  <div id="square5"></div>
+</div>
+
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-12">
+  <a href="index.html" class="button">← Vers Accueil</a>
+  <a href="etude-de-cas.html" class="button">Vers Étude de Cas →</a>
+</div>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-sm text-gray-500 bg-black border-t mt-16">
+    &copy; 2025 Aron Pautrot. Tous droits réservés.
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      AOS.init({
+        once: true,
+        duration: 600,
+        offset: 100,
+      });
+      AOS.refresh();
+    });
+  </script>
+</body>
+</html>
